@@ -1,19 +1,20 @@
-﻿using Xunit;
+﻿using ListRandomizer;
+using Xunit;
 
 namespace ListRandomizerTests
 {
     public class RandomListGeneratorTest
     {
         [Fact]
-        public void TestMethod()
+        public void ShouldGenerateRandomListOfIntegersOfRandomLength()
         {
             // arrange
 
-
             // act
+            var result = RandomListGenerator.GetRandomIntList();
 
             // assert
-            Assert.True(1 == 1);
+            Assert.NotEmpty(result);
         }
     }
 }
